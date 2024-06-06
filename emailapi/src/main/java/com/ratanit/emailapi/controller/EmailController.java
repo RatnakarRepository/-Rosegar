@@ -16,7 +16,7 @@ public class EmailController {
 
     @RequestMapping(value = "/sendemail", method = RequestMethod.POST)
     public EmailRequest sendEmail(@RequestBody EmailRequest emailRequest){
-        System.out.println("Test Changes in git Hub in EmailController");
+        System.out.println("Test Changes in git Hub in EmailController to RatanBranch");
         System.out.println("EmailController::emailRequest ->"+emailRequest);
         EmailRequest result = emailService.sendEmail(emailRequest);
         //result.setTo("Akshara2");
